@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import coverImage from "../../public/images/banner-image-cropped.jpg";
+import coverImage from "../assets/images/banner-image-cropped.jpg";
 import { Box, Button, Container, Typography } from "@mui/material";
 
 const Banner = () => {
@@ -31,7 +31,8 @@ const Banner = () => {
       >
         <Typography color="white">Welcome</Typography>
         <Typography color="white" variant="h3">
-          We serve the richest coffee ,<br />
+          We serve the richest coffee,
+          <br />
           in the city!
         </Typography>
         <Button
