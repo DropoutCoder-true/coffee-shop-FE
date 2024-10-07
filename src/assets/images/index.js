@@ -3,6 +3,8 @@ export { default as ColdCoffeeCupIcon } from "./coffee-cup.png";
 export { default as CoffeeCupIcon } from "./coffee-cup-small.png";
 export { default as DessertIcon } from "./desserts.png";
 export { default as MasterBackground } from "./master-background.jpg";
+export { default as LeftSideImage } from "./coffee-side-image-1.jpg";
+export { default as RightSideImage } from "./coffee-side-image-2.jpg";
 
 import Americano from "../images/Americano-coffee.jpg";
 import Black from "../images/black-coffee.jpg";

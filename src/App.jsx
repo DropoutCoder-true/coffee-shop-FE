@@ -10,6 +10,7 @@ import {
 import SliderComponent from "./components/SliderComponent";
 import { CoffeeSpecials } from "./assets/images";
 import { DessertSpecials } from "./assets/images";
+import ExploreProducts from "./components/ExploreProducts";
 
 function App() {
   return (
@@ -58,6 +59,9 @@ function App() {
             data={DessertSpecials}
           />
         </Box>
+
+        {/* Customer Feedback */}
+        <ExploreProducts />
       </Container>
     </Box>
   );
