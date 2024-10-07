@@ -6,7 +6,6 @@ import { Box, Button, Container, Typography } from "@mui/material";
 const Banner = () => {
   return (
     <Container
-      disableGutters={false}
       maxWidth={false}
       sx={{
         backgroundImage: `url(${coverImage})`,
