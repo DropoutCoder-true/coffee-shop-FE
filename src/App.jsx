@@ -38,7 +38,7 @@ function App() {
           marginTop: "4rem",
         }}
       >
-        <SliderComponent data={CoffeeSpecials} />
+        <SliderComponent title="Our Special Coffees" data={CoffeeSpecials} />
       </Box>
     </Container>
   );

@@ -1,9 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "../assets/images/Americano-coffee.jpg";
-import Image2 from "../assets/images/black-coffee.jpg";
-import Image3 from "../assets/images/cappuccino-coffee.jpg";
-import Image4 from "../assets/images/Cortado-coffee.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,19 +7,28 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import { Typography } from "@mui/material";
 
-const SliderComponent = ({ data }) => {
+const SliderComponent = ({ title, data }) => {
   return (
     <>
+      <Typography
+        variant="h4"
+        sx={{ marginLeft: "40vw", marginBottom: "3rem" }}
+      >
+        {title}
+      </Typography>
       <Swiper
         style={{ width: "100%", height: "60%" }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         initialSlide={2}
-        autoplay
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         slidesPerView={4}
         coverflowEffect={{
           rotate: 50,
@@ -33,22 +38,26 @@ const SliderComponent = ({ data }) => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Autoplay]}
       >
         {data.map((item, i) => (
           <SwiperSlide key={i}>
             <img
               src={item.img}
               alt={item.name}
-              style={{ objectFit: "contain", height: "80%", width: "100%" }}
+              style={{ objectFit: "contain", height: "70%", width: "100%" }}
             />
             <div
               style={{
                 display: "flex",
-                justifyContent: "center",
+                // justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
             >
               <Typography variant="h4">{item.name}</Typography>
+              <Typography variant="h6">{item.desc}</Typography>
+              <Typography variant="h6">Price: ${item.price}</Typography>
             </div>
           </SwiperSlide>
         ))}
