@@ -7,10 +7,10 @@ const CoffeeVarieties = ({ iconUrl, title }) => {
       disableGutters
       sx={{
         marginTop: "3rem",
-        marginLeft: "3rem",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        gap: "3rem",
       }}
     >
       <Box

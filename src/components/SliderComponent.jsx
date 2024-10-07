@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
@@ -15,12 +15,12 @@ const SliderComponent = ({ title, data }) => {
     <>
       <Typography
         variant="h3"
-        sx={{ marginLeft: "40vw", marginBottom: "3rem" }}
+        sx={{ marginLeft: "35vw", marginBottom: "3rem" }}
       >
         {title}
       </Typography>
       <Swiper
-        style={{ width: "100%", height: "60%", marginBottom: "5rem" }}
+        style={{ width: "100%", height: "50%", marginBottom: "5rem" }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -37,11 +37,11 @@ const SliderComponent = ({ title, data }) => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        // pagination={true}
+        modules={[EffectCoverflow, Autoplay]}
       >
         {data.map((item, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={i} style={{ height: "50vh" }}>
             <img
               src={item.img}
               alt={item.name}

@@ -2,6 +2,7 @@ export { default as HotCoffeeCupIcon } from "./hot-coffee.png";
 export { default as ColdCoffeeCupIcon } from "./coffee-cup.png";
 export { default as CoffeeCupIcon } from "./coffee-cup-small.png";
 export { default as DessertIcon } from "./desserts.png";
+export { default as MasterBackground } from "./master-background.jpg";
 
 import Americano from "../images/Americano-coffee.jpg";
 import Black from "../images/black-coffee.jpg";
@@ -14,7 +15,6 @@ import Lattee from "../images/lattee-coffee.jpg";
 import ApplePie from "../images/apple-pie.jpg";
 import BanoffeePie from "../images/Banoffee_Pie.jpg";
 import BelgiumWaffles from "../images/Belgium_Waffles.jpg";
-import Brigadiero from "../images/Brigadiero.jpg";
 import Cheesecake from "../images/Cheesecake.jpg";
 import Churros from "../images/Churros.jpg";
 import CremeBrules from "../images/Creme_Brulee.jpg";
