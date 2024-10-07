@@ -20,7 +20,11 @@ const SliderComponent = ({ title, data }) => {
         {title}
       </Typography>
       <Swiper
-        style={{ width: "100%", height: "50%", marginBottom: "5rem" }}
+        style={{
+          width: "100%",
+          height: "50%",
+          marginBottom: "5rem",
+        }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -41,7 +45,15 @@ const SliderComponent = ({ title, data }) => {
         modules={[EffectCoverflow, Autoplay]}
       >
         {data.map((item, i) => (
-          <SwiperSlide key={i} style={{ height: "50vh" }}>
+          <SwiperSlide
+            key={i}
+            style={{
+              height: "50vh",
+              backgroundColor: "#ecebe6",
+              borderRadius: "30px",
+              border: "3px solid #2c2421",
+            }}
+          >
             <img
               src={item.img}
               alt={item.name}
@@ -57,6 +69,8 @@ const SliderComponent = ({ title, data }) => {
                 // justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
+                backgroundColor: "#2c2421",
+                color: "white",
               }}
             >
               <Typography variant="h4">{item.name}</Typography>
