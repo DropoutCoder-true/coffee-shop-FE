@@ -9,6 +9,7 @@ import {
 } from "./assets/images";
 import SliderComponent from "./components/SliderComponent";
 import { CoffeeSpecials } from "./assets/images";
+import { DessertSpecials } from "./assets/images";
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
         }}
       >
         <SliderComponent title="Our Special Coffees" data={CoffeeSpecials} />
+
+        <SliderComponent title="Our Special Desserts" data={DessertSpecials} />
       </Box>
     </Container>
   );

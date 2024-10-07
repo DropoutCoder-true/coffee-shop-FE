@@ -14,13 +14,13 @@ const SliderComponent = ({ title, data }) => {
   return (
     <>
       <Typography
-        variant="h4"
+        variant="h3"
         sx={{ marginLeft: "40vw", marginBottom: "3rem" }}
       >
         {title}
       </Typography>
       <Swiper
-        style={{ width: "100%", height: "60%" }}
+        style={{ width: "100%", height: "60%", marginBottom: "5rem" }}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -45,7 +45,11 @@ const SliderComponent = ({ title, data }) => {
             <img
               src={item.img}
               alt={item.name}
-              style={{ objectFit: "contain", height: "70%", width: "100%" }}
+              style={{
+                objectFit: "contain",
+                height: "70%",
+                width: "100%",
+              }}
             />
             <div
               style={{
