@@ -23,6 +23,7 @@ import { CoffeeSpecials } from "./assets/images";
 import { DessertSpecials } from "./assets/images";
 import ExploreProducts from "./components/ExploreProducts";
 import CustomerFeedback from "./components/CustomerFeedback";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -163,6 +164,20 @@ function App() {
             alt="right-image"
             style={{ height: "50vh" }}
           />
+        </Box>
+
+        {/* Footer  */}
+        <Box
+          sx={{
+            backgroundColor: "#2c2421",
+            display: "flex",
+            justifyContent: "space-evenly",
+            gap: "3rem",
+            color: "white",
+            padding: "2rem 2rem 2rem 2rem",
+          }}
+        >
+          <Footer />
         </Box>
       </Container>
     </Box>

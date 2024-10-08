@@ -7,6 +7,10 @@ const theme = createTheme({
       fontFamily: '"Merriweather", serif',
       fontWeight: 900,
     },
+    h4: {
+      fontFamily: '"Merriweather", serif',
+      fontWeight: 900,
+    },
   },
   components: {
     MuiCssBaseline: {

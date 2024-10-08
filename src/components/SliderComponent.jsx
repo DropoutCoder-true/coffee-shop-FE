@@ -65,6 +65,8 @@ const SliderComponent = ({ title, data }) => {
                 // justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
+                height: "100%",
+                borderRadius: "30px",
                 backgroundColor: "#2c2421",
                 borderEndEndRadius: "22px",
                 borderBottomLeftRadius: "22px",
