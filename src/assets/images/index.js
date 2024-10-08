@@ -5,6 +5,8 @@ export { default as DessertIcon } from "./desserts.png";
 export { default as MasterBackground } from "./master-background.jpg";
 export { default as LeftSideImage } from "./coffee-side-image-1.jpg";
 export { default as RightSideImage } from "./coffee-side-image-2.jpg";
+export { default as LeftCoffeeBorder } from "./coffee-border-1.jpg";
+export { default as RightCoffeeBorder } from "./coffee-border-2.jpg";
 
 import Americano from "../images/Americano-coffee.jpg";
 import Black from "../images/black-coffee.jpg";
@@ -23,6 +25,13 @@ import CremeBrules from "../images/Creme_Brulee.jpg";
 import Gelato from "../images/Gelato.jpg";
 import Picarones from "../images/Picarones.jpg";
 import Tiramisu from "../images/Tiramisu.jpg";
+
+import Face1 from "../images/face-1.jpg";
+import Face2 from "../images/face-2.jpg";
+import Face3 from "../images/face-3.jpg";
+import Face4 from "../images/face-4.jpg";
+import Face5 from "../images/face-5.jpg";
+import Face6 from "../images/face-6.jpg";
 
 export const CoffeeSpecials = [
   {
@@ -123,5 +132,64 @@ export const DessertSpecials = [
     name: "Tiramisu",
     desc: "Something about Tiramisu",
     price: 52,
+  },
+];
+
+export const CustomerData = [
+  {
+    imgUrl: Face1,
+    name: "Emilia",
+    profession: "Winemaker",
+    rating: 4.5,
+    desc: "Best flat white in town, hands down!",
+  },
+  {
+    imgUrl: Face2,
+    name: "Luca",
+    profession: "Chocolatier",
+    rating: 3.8,
+    desc: "Best flat white in town, hands down!",
+  },
+  {
+    imgUrl: Face3,
+    name: "Sofia",
+    profession: "Art Restorer",
+    rating: 5.0,
+    desc: "The barista’s latte art game is top-notch. A feast for the eyes and the taste buds.",
+  },
+  {
+    imgUrl: Face4,
+    name: "Matteo",
+    profession: "Fashion Designer",
+    rating: 2.7,
+    desc: "Tried the new seasonal blend – absolutely delightful!",
+  },
+  {
+    imgUrl: Face5,
+    name: "Olivia",
+    profession: "Patissier",
+    rating: 4.2,
+    desc: "WiFi could be faster, but the coffee makes up for it.",
+  },
+  {
+    imgUrl: Face6,
+    name: "Adrian",
+    profession: "Watchmaker",
+    rating: 3.9,
+    desc: "Great spot for a quiet read or catching up with friends.",
+  },
+  {
+    imgUrl: Face3,
+    name: "Clara",
+    profession: "Historian",
+    rating: 4.8,
+    desc: "Friendly staff and delicious pastries. What more could you want?",
+  },
+  {
+    imgUrl: Face5,
+    name: "Elias",
+    profession: "Opera Singer",
+    rating: 3.1,
+    desc: "A bit pricey, but the quality of the coffee is worth it.",
   },
 ];

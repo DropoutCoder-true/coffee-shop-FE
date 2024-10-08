@@ -38,9 +38,9 @@ const Banner = () => {
           variant="contained"
           size="large"
           sx={{
-            width: "10%",
+            width: "20%",
             borderRadius: "20px",
-            backgroundColor: "rgb(134, 83, 54)",
+            backgroundColor: "#2c2421",
           }}
         >
           Order Now!

@@ -6,11 +6,14 @@ import {
   ColdCoffeeCupIcon,
   DessertIcon,
   HotCoffeeCupIcon,
+  LeftCoffeeBorder,
+  RightCoffeeBorder,
 } from "./assets/images";
 import SliderComponent from "./components/SliderComponent";
 import { CoffeeSpecials } from "./assets/images";
 import { DessertSpecials } from "./assets/images";
 import ExploreProducts from "./components/ExploreProducts";
+import CustomerFeedback from "./components/CustomerFeedback";
 
 function App() {
   return (
@@ -62,6 +65,34 @@ function App() {
 
         {/* Customer Feedback */}
         <ExploreProducts />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            backgroundColor: "white",
+          }}
+        >
+          <img
+            src={RightCoffeeBorder}
+            alt="left-side-border"
+            style={{ height: "100%", width: "30%" }}
+          />
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <CustomerFeedback />
+          </Box>
+          <img
+            src={LeftCoffeeBorder}
+            alt="left-side-border"
+            style={{ height: "100%", width: "30%" }}
+          />
+        </Box>
       </Container>
     </Box>
   );
