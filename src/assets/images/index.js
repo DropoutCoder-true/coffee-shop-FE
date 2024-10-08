@@ -7,6 +7,8 @@ export { default as LeftSideImage } from "./coffee-side-image-1.jpg";
 export { default as RightSideImage } from "./coffee-side-image-2.jpg";
 export { default as LeftCoffeeBorder } from "./coffee-border-1.jpg";
 export { default as RightCoffeeBorder } from "./coffee-border-2.jpg";
+export { default as RightCoffeeImage } from "./coffee-image.jpg";
+export { default as LeftCoffeeImage } from "./cloth-bag-with-coffee-beans.jpg";
 
 import Americano from "../images/Americano-coffee.jpg";
 import Black from "../images/black-coffee.jpg";

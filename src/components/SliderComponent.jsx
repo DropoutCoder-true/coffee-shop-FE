@@ -7,7 +7,7 @@ import "swiper/css/effect-coverflow";
 // import "swiper/css/pagination";
 
 // import required modules
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Typography } from "@mui/material";
 
 const SliderComponent = ({ title, data }) => {
@@ -29,10 +29,6 @@ const SliderComponent = ({ title, data }) => {
         grabCursor={true}
         centeredSlides={true}
         initialSlide={2}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
         slidesPerView={4}
         coverflowEffect={{
           rotate: 50,
@@ -42,13 +38,13 @@ const SliderComponent = ({ title, data }) => {
           slideShadows: true,
         }}
         // pagination={true}
-        modules={[EffectCoverflow, Autoplay]}
+        modules={[EffectCoverflow]}
       >
         {data.map((item, i) => (
           <SwiperSlide
             key={i}
             style={{
-              height: "50vh",
+              height: "39vh",
               backgroundColor: "#ecebe6",
               borderRadius: "30px",
               border: "3px solid #2c2421",
@@ -70,6 +66,8 @@ const SliderComponent = ({ title, data }) => {
                 alignItems: "center",
                 flexDirection: "column",
                 backgroundColor: "#2c2421",
+                borderEndEndRadius: "22px",
+                borderBottomLeftRadius: "22px",
                 color: "white",
               }}
             >

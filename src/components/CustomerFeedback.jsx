@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import { CustomerData } from "../assets/images";
 import { EffectCards } from "swiper/modules";
 import { Box, Typography } from "@mui/material";
@@ -17,14 +17,18 @@ const CustomerFeedback = () => {
   return (
     <>
       <Typography variant="h5">Come and Join</Typography>
-      <Typography variant="h4">Our Happy Customers</Typography>
+      <Typography variant="h3">Our Happy Customers</Typography>
       <Swiper
         pagination={{
           dynamicBullets: true,
         }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         effect={"cards"}
         grabCursor={true}
-        modules={[EffectCards, Pagination]}
+        modules={[EffectCards, Pagination, Autoplay]}
         className="mySwiper"
         style={{ width: "350px", height: "350px", marginTop: "2rem" }}
       >

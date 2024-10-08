@@ -1,4 +1,11 @@
-import { Box, Container } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Input,
+  TextField,
+  Typography,
+} from "@mui/material";
 import Banner from "./components/Banner";
 import CoffeeVariety from "./components/CoffeeVariety";
 import {
@@ -7,7 +14,9 @@ import {
   DessertIcon,
   HotCoffeeCupIcon,
   LeftCoffeeBorder,
+  LeftCoffeeImage,
   RightCoffeeBorder,
+  RightCoffeeImage,
 } from "./assets/images";
 import SliderComponent from "./components/SliderComponent";
 import { CoffeeSpecials } from "./assets/images";
@@ -91,6 +100,68 @@ function App() {
             src={LeftCoffeeBorder}
             alt="left-side-border"
             style={{ height: "100%", width: "30%" }}
+          />
+        </Box>
+
+        {/* Subscribe us */}
+        <Box
+          maxWidth={true}
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            backgroundColor: "#e2d9c8",
+          }}
+        >
+          <img
+            src={LeftCoffeeImage}
+            alt="left-image"
+            style={{ height: "50vh", objectFit: "contain" }}
+          />
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Typography variant="h3">Join in and get 15% Off!</Typography>
+            <Typography variant="caption">
+              Subscribe to our newsletter and get the discount today.
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "1rem",
+                marginTop: "3rem",
+              }}
+            >
+              <TextField
+                label="Email"
+                variant="filled"
+                sx={{
+                  backgroundColor: "white",
+                  width: "20vw",
+                }}
+              />
+              <Button
+                sx={{
+                  height: "5vh",
+                  backgroundColor: "#2c2421",
+                  color: "white",
+                  borderRadius: "20%",
+                }}
+              >
+                Subscribe
+              </Button>
+            </Box>
+          </Box>
+          <img
+            src={RightCoffeeImage}
+            alt="right-image"
+            style={{ height: "50vh" }}
           />
         </Box>
       </Container>
