@@ -22,7 +22,7 @@ const SliderComponent = ({ title, data }) => {
       <Swiper
         style={{
           width: "100%",
-          height: "50%",
+          // backgroundColor: "yellow",
           marginBottom: "5rem",
         }}
         effect={"coverflow"}
@@ -44,8 +44,9 @@ const SliderComponent = ({ title, data }) => {
           <SwiperSlide
             key={i}
             style={{
-              height: "39vh",
-              backgroundColor: "#ecebe6",
+              height: "40vh",
+              backgroundColor: "#e2d9c8",
+              // backgroundColor: "red",
               borderRadius: "30px",
               border: "3px solid #2c2421",
             }}
@@ -55,17 +56,17 @@ const SliderComponent = ({ title, data }) => {
               alt={item.name}
               style={{
                 objectFit: "contain",
-                height: "70%",
+                height: "71%",
                 width: "100%",
               }}
             />
             <div
               style={{
                 display: "flex",
-                // justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
-                height: "100%",
+                width: "100%",
+                // height: "40%",
                 borderRadius: "30px",
                 backgroundColor: "#2c2421",
                 borderEndEndRadius: "22px",
